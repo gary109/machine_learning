@@ -9,14 +9,14 @@ LDFLAGS = -lstdc++ -lpthread
 
 DIR = $(shell pwd)
 
-APP = demo_pla
+APP = demo_pocket_pla
 
 all: $(APP)
 
 %.o: %.cpp
 	$(C++) $(CCFLAGS) $< -c -o $@
 
-demo_pla: demo_pla.o
+demo_pocket_pla: demo_pocket_pla.o
 	$(C++) $^ -o $@ $(LDFLAGS)
 
 clean:
