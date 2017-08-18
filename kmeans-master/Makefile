@@ -9,14 +9,14 @@ LDFLAGS = -lstdc++ -lpthread
 
 DIR = $(shell pwd)
 
-APP = k-means_clustering
+APP = kmeans
 
 all: $(APP)
 
 %.o: %.cpp
 	$(C++) $(CCFLAGS) $< -c -o $@
 
-k-means_clustering: k-means_clustering.o
+kmeans: kmeans.o
 	$(C++) $^ -o $@ $(LDFLAGS)
 
 clean:
