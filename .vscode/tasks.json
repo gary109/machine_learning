@@ -4,8 +4,8 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "taskName": "make",
-            "command": "make",
+            "taskName": "make clean",
+            "command": "make clean",
             "type": "shell",
             "problemMatcher": [
                 "$gcc"
